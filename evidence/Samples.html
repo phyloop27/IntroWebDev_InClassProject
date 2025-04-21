@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samples</title>
+</head>
+
+<body>
+<h1 align="center">Temp HTML page to store Sample Function's & Code</h1>
+<hr/>
+<p> Below code to show current date and time - This lowers overall site performance
+on the Lighthouse Report tool - Possibly due to the CONSTANTLY updating time </p>
+<span id="clock"></span> <! JS code to insert clock and date at this location - See below for driver code>
+<hr/>
+
+<p>  Code to generate Jumbotron image background and text from Stack Overflow </p>
+<div class="jumbotron" style="background: url(/images/homepage-hero-bg.jpeg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;">
+    <h1>Hello</h1>
+</div>
+<br>
+<p>Original Jumbotron code given in activity 14 - Coudn't get it to work! Stack overflow to the rescue!</p>
+<div class="p-2 mb-2 bg-light jumbotron">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Today's news from all around the world!</h1>
+        <p class="col-md 8 fs-4">Read the latest sport, education and gaming news from around the world.</p>
+    </div>
+</div>
+<br>
+<hr/>
+
+<div class="p-2 mb-2 bg-light jumbotron" style="background: url('./images/homepage-hero-bg.jpeg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;">
+
+    <h1 class="display-5 fw-bold">Today's news from all around the world!</h1>
+    <p class="col-md 8 fs-4">Read the latest sport, education and gaming news from around the world.</p>
+</div>
+
+</body>
+
+<! JavaScript Bootstrap link to CDN >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<! JavaScript code to Display the time and date - This LOWERS SITE PERFORMANCE >
+<script type="text/javascript">
+  var clockElement = document.getElementById('clock');
+  function clock() {
+    var date = new Date();
+    // Replace '400px' below with where you want the format to change.
+    if (window.matchMedia('(max-width: 400px)').matches) {
+      // Use this format for windows with a width up to the value above.
+      clockElement.textContent = date.toLocaleString();
+    } else {
+      // While this format will be used for larger windows.
+      clockElement.textContent = date.toString();
+    }
+  }
+  setInterval(clock);
+</script>
+
+</html>

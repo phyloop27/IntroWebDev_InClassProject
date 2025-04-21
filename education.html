@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <! Page Tab Title >
+  <title class="title">Education Page</title>
+  <! Boot Strap Link to CND >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <! Code to link to my own CSS file - Local Hard drive File>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <! Font Awesome - Webpage icons >
+  <script src="https://kit.fontawesome.com/f382cfac43.js" crossorigin="anonymous"></script>
+  <! Google Fonts  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Tint&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Boldonse&family=Bungee+Tint&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK85W1YHJ0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XK85W1YHJ0');
+  </script>
+</head>
+
+<body id="education-page"> <!-- Main body of code displayed on the web page -->
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+    <span id="clock"></span> <! JS code to insert clock and date at this location - See below for driver code>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sport.html"><i class="fa-solid fa-volleyball"></i>Sport</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="education.html"><i class="fa-solid fa-book"></i>Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gaming.html"><i class="fa-solid fa-headset"></i>Gaming</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="mt-5">
+    <h1>Education New's</h1>
+
+  </div>
+</div>
+
+<! JavaScript Bootstrap link to CDN >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+  var clockElement = document.getElementById('clock');
+
+  function clock() {
+    clockElement.textContent = new Date().toString();
+  }
+  setInterval(clock, 1000);
+</script>
+
+</body>
+</html>

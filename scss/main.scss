@@ -1,0 +1,109 @@
+/*
+This file was created in Activity 27
+It replaces the main style.css sheet for SASS framework
+In the sport.html file, ( In Activity 27 and Onwards )
+  - the Bootstrap CDN location link in the <head> section has been changed
+    From:
+      <! Boot Strap Link to CND >
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    Too:
+      <! Boot Strap Link to CND >
+      <link href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+
+  - the Javascript location link at the bottom in <body> -- <script> has been changed
+    From:
+        <! JavaScript Bootstrap link to CDN >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    Too:
+      <! JavaScript Bootstrap link to CDN >
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+When editing this file i need to recompile it again -
+1. open Git Bash terminal in THIS FOLDER within the terminal and run ( Must be the GIT Bash Terminal to work correctly)
+        sass main.scss ../css/styles.css
+This will recompile the file for use with updated changes.
+ */
+
+nav .navbar-brand {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-palette: dark-caps;
+  color: #8314a0;
+}
+
+.boldonse-regular {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-palette: dark-caps;
+  color: #e5171b;
+  border: 16px solid #ffffff;
+}
+
+.FormPage {
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  color: #e5171b;
+  border: 16px solid #ffffff;
+}
+
+/*
+The below code dosen't do anything, It is supposed to be the
+Jumbotron backGround image settings but it didnt work
+Activity 14
+ */
+#home-page .jumbotron {
+  background-image: url("../images/homepage-hero-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
+/*
+The below code is from activity 24
+and controls the css for the sport.js
+It controls the layout/color of the results
+received from the API call
+-- I have commented these out as per activity 25 --
+#results {
+    list-style: none;
+    padding: 0;
+}
+
+#results li {
+    display: inline-block;
+    padding: 10px;
+    width: 25%;
+}
+
+  #results li a {
+      color: #000;
+  }
+ */
+
+/*
+Code below is for Activity 27 and uses previous code from Activity 24
+ */
+#results {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 10px;
+      width: 25%;
+    }
+
+    li a {
+      color: #000;
+    }
+}
