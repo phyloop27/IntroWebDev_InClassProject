@@ -39,7 +39,6 @@
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
-    <span id="clock"></span> <! JS code to insert clock and date at this location - See below for driver code>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -63,14 +62,11 @@
   </div>
 </nav>
 
-<div class="container">
-  <div class="mt-5">
-    <h1>Gaming New's</h1>
-  </div>
+<!-- Code starting for API results Layout - Activity 25 -->
+<div class="container mt-4">
+  <h1>Gaming New's</h1>
+  <div id="results" class="row"></div>
 </div>
-
-<!-- Code added from Activity 30 Onwards -->
-<div id="results" class="row mt-4"></div>
 
 <! JavaScript Bootstrap link to CDN >
 <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> Removed for Activity 30 -->
@@ -79,7 +75,19 @@
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/gaming.js"></script>
 
-<! JavaScript code to add the clock feature to the top of the page >
+<! JS code to insert clock and date at this location - See below for driver code>
+<div class="container-fluid text-center">
+  <span id="clock"></span>
+</div>
+
+<! Page Footer >
+<div class="container-fluid text-center">
+  <footer>
+    <p>Author: S288984 <br>
+  </footer>
+</div>
+
+<! JavaScript code to add the clock feature >
 <script type="text/javascript">
   const clockElement = document.getElementById('clock');
 

@@ -2,26 +2,13 @@
 const resultList = document.querySelector('#results');
 const url = 'https://content.guardianapis.com/search?q=sport&api-key=';
 const apiKey = 'e9c90ecd-d8b9-47ab-b0c0-31839b65fb0a';
-fetch(url + apiKey)
+const pageSize = '&page-size=12'
+
+fetch(url + apiKey + pageSize)
 .then((response) => response.json())
 .then((data) => {
     data.response.results.forEach(function (value) {
         console.log(value);
-        /*  Code has been commented out here as per Activity 25 -
-            Code relates to labeled comments in sport.js & style.css sheets - Activity 24 and Previous
-                const articleElement = `
-                <li>
-                    <a target="_blank" href="${value.webUrl}">${value.webTitle}</a>
-                </li>`;
-        The code BELOW is for Activity 25 onwards .......    */
-        /*
-                const articleElement = `
-                <div class="col-md-4">
-                    <a target="_blank" href="${value.webUrl}">${value.webTitle}</a>
-                </div>`;
-                resultList.insertAdjacentHTML('beforeend', articleElement);
-            });
-         */
         const articleElement = `
             <div class="col-md-4 mb-4"> <!-- Creats the '3 coloum' Layout  -->
                 <div class="card h-100"> <!-- This will Kepp the top's of the cards the same hight  -->

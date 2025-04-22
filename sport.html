@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
   <! Page Tab Title >
   <title class="title">Sport Page</title>
 
@@ -23,7 +24,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Tint&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Boldonse&family=Bungee+Tint&display=swap" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
+
+  <! Google tag (gtag.js) >
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK85W1YHJ0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -38,7 +40,6 @@
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
-    <span id="clock"></span> <! JS code to insert clock and date at this location - See below for driver code>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -78,7 +79,7 @@ also commented out and left labeled! -
 
 <!-- Code starting for API results Layout - Activity 25 -->
 <div class="container mt-4">
-  <h1>Sport News</h1>
+  <h1>Sporting News</h1>
   <div id="results" class="row"></div>
 </div>
 
@@ -90,9 +91,22 @@ also commented out and left labeled! -
  *** Removed bootstrap link code as per Activity 28 ***
  -->
 
+<! JS code to insert clock and date at this location - See below for driver code>
+<div class="container-fluid text-center">
+  <span id="clock"></span>
+</div>
+
+<! Page Footer >
+<div class="container-fluid text-center">
+  <footer>
+    <p>Author: S288984 <br>
+  </footer>
+</div>
+
 <! JS code added from activity 21>
 <script src="./js/sport.js"></script>
 
+<! Driver code for date/time stamp >
 <script type="text/javascript">
   const clockElement = document.getElementById('clock');
 

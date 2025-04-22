@@ -1,11 +1,9 @@
 
 const resultList = document.querySelector('#results');
-/*
-Update the URL String - specifically the 'search?q=...' for the required topic
- */
 const url = 'https://content.guardianapis.com/search?q=education&api-key=';
 const apiKey = 'e9c90ecd-d8b9-47ab-b0c0-31839b65fb0a';
-fetch(url + apiKey)
+const pageSize = '&page-size=12'
+fetch(url + apiKey + pageSize)
   .then((response) => response.json())
   .then((data) => {
     data.response.results.forEach(function (value) {
