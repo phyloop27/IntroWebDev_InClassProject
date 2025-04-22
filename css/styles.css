@@ -24,6 +24,57 @@ When editing this file i need to recompile it again -
         sass main.scss ../css/styles.css
 This will recompile the file for use with updated changes.
  */
+/*
+Code below is for Activity 27 and uses previous code from Activity 24
+ */
+#results {
+  list-style: none;
+  padding: 0;
+}
+#results li {
+  display: inline-block;
+  padding: 10px;
+  width: 25%;
+}
+#results li a {
+  color: #000;
+}
+
+nav .navbar-brand {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-palette: dark-caps;
+  color: #8314a0;
+}
+
+/*
+The below code dosen't do anything, It is supposed to be the
+Jumbotron backGround image settings but it didnt work
+Activity 14
+ */
+#home-page .jumbotron {
+  background-image: url("../../images/homepage-hero-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.FormPage {
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  color: #e5171b;
+  border: 16px solid #ffffff;
+}
+
 /*!
  * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -11875,6 +11926,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* This has been moved to /scss/layout/_navigation
 nav .navbar-brand {
   font-family: "Bungee Tint", sans-serif;
   font-weight: 400;
@@ -11883,7 +11935,8 @@ nav .navbar-brand {
   font-palette: dark-caps;
   color: #8314a0;
 }
-
+*/
+/*
 .boldonse-regular {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
@@ -11894,6 +11947,7 @@ nav .navbar-brand {
   border: 16px solid #ffffff;
 }
 
+/* This has been moved to /scss/pages/_form
 .FormPage {
   margin-top: 5% !important;
   margin-bottom: 5% !important;
@@ -11906,20 +11960,7 @@ nav .navbar-brand {
   color: #e5171b;
   border: 16px solid #ffffff;
 }
-
-/*
-The below code dosen't do anything, It is supposed to be the
-Jumbotron backGround image settings but it didnt work
-Activity 14
- */
-#home-page .jumbotron {
-  background-image: url("../images/homepage-hero-bg.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: #ffffff;
-}
-
+*/
 /*
 The below code is from activity 24
 and controls the css for the sport.js
@@ -11941,20 +11982,5 @@ received from the API call
       color: #000;
   }
  */
-/*
-Code below is for Activity 27 and uses previous code from Activity 24
- */
-#results {
-  list-style: none;
-  padding: 0;
-}
-#results li {
-  display: inline-block;
-  padding: 10px;
-  width: 25%;
-}
-#results li a {
-  color: #000;
-}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+/*
+The below code dosen't do anything, It is supposed to be the
+Jumbotron backGround image settings but it didnt work
+Activity 14
+ */
+#home-page .jumbotron {
+  background-image: url("../../images/homepage-hero-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
