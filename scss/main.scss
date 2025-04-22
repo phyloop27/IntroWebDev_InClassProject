@@ -24,6 +24,8 @@ When editing this file i need to recompile it again -
 This will recompile the file for use with updated changes.
  */
 
+@import "vendors/bootstrap";
+
 nav .navbar-brand {
   font-family: "Bungee Tint", sans-serif;
   font-weight: 400;
